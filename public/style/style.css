@@ -23,6 +23,7 @@ body {
 }
 
 /*стилізація навігації*/
+
 .main-header {
     margin-bottom: 60px;
     background-color: black;
@@ -93,7 +94,9 @@ body {
 }
 
 /*стилізація тіла сторінки*/
+
 /*Головна сторінка*/
+
 .main-container {
     width: 100%;
     background-color: white;
@@ -120,7 +123,32 @@ body {
 .main-page-text-block a {
     color: #6A6A6A;
 }
+
 /*Сторінка контактів*/
+
+.contact-page {
+    float: left;
+    padding: 40px 70px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.contact-page-text-block {
+    font-weight: 700;
+}
+
+.contact-page-text-block h1 {
+    text-align: left;
+}
+
+.contact-block-left {
+    float: left;
+    width: 337px;
+}
+
+.contact-block-right {
+    float: right;
+    width: 337px;
+}
 
 /*Слайдер*/
 

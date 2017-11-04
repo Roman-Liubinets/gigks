@@ -227,3 +227,12 @@ app.directive("sliderBlock", function() {
         }
     }
 });
+
+//Директива футера
+app.directive("footerBlock", function() {
+    return {
+        replace: true,
+        templateUrl: "template/footer.html",
+        controller: function($scope, $http, ngDialog) {}
+    }
+});
