@@ -1,5 +1,23 @@
-var app = angular.module('app', ['ngDialog']);
+const app = angular.module('app', ['ngDialog']);
 
+// //Забираєм %2F та # з url сайту
+// app.config(['$locationProvider', function ($locationProvider) {
+//     $locationProvider.hashPrefix('');
+//     $locationProvider.html5Mode(true);
+// }]);
+//
+// app.config(function ($routeProvider) {
+//     $routeProvider
+//         .when('/', {
+//             templateUrl: '/template/index.html'
+//         })
+//         .otherwise({
+//             redirectTo: '/'
+//         });
+//
+// });
+
+//Котроллер
 app.controller("myCtrl", function($scope, $http, ngDialog) {});
 
 //Директива панелі меню
