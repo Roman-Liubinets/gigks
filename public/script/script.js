@@ -108,6 +108,14 @@ app.directive("videoBlock", function() {
         controller: function($scope, $http, ngDialog) {}
     }
 });
+//Директива для сторінки контакти
+app.directive("contactBlock", function() {
+    return {
+        replace: true,
+        templateUrl: "template/contactPage.html",
+        controller: function($scope, $http, ngDialog) {}
+    }
+});
 
 //Директива для слайдера
 app.directive("sliderBlock", function() {
