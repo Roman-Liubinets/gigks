@@ -257,3 +257,48 @@ body {
 #slidewrapper li:nth-child(3), #slidewrapper li:nth-child(4) {
     display: none;
 }
+
+/*Футер*/
+.main-footer {
+    height: 120px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    align-items: center;
+    margin-top: 70px;
+    background: url("../img/footer-background.jpg") repeat;
+    background-position: 0px 0px;
+    background-size: auto;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: white;
+}
+
+.footer-contacts {
+    float: left;
+    display: inline-block;
+    margin-right: 170px;
+    margin-top: 20px;
+}
+
+.footer-contacts a {
+    color: white;
+}
+
+.footer-social {
+    float: left;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.social-btn {
+width: 41px;
+height: 41px;
+background: url("../img/favicon.ico") no-repeat;
+}
+
+
+.footer-copyright {
+    float: right;
+    display: inline-block;
+    margin-top: 30px;
+
+}
