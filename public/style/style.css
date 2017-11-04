@@ -91,3 +91,11 @@ body {
 .user-block a:hover {
     border-bottom: 3px solid #C9C699;
 }
+
+/*стилізація тіла сторінки*/
+
+.main-container {
+    width: 100%;
+    background-color: white;
+    min-height: 300px;
+}

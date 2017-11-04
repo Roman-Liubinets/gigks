@@ -100,3 +100,11 @@ app.directive("mainBlock", function() {
         controller: function($scope, $http, ngDialog) {}
     }
 });
+//Директива сторінки з відео
+app.directive("videoBlock", function() {
+    return {
+        replace: true,
+        templateUrl: "template/videoPage.html",
+        controller: function($scope, $http, ngDialog) {}
+    }
+});
