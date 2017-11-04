@@ -30,7 +30,6 @@ app.directive("headerBlock", function() {
             $scope.video = false;
             $scope.contact = false;
             $scope.simulators = false;
-            $scope.school = false;
             $scope.userBlock = false;
 
             $scope.menuNavBtn = [{
@@ -40,7 +39,6 @@ app.directive("headerBlock", function() {
                     $scope.video = false;
                     $scope.contact = false;
                     $scope.simulators = false;
-                    $scope.school = false;
                     $scope.userBlock = false;
                 }
             }, {
@@ -50,7 +48,6 @@ app.directive("headerBlock", function() {
                     $scope.video = true;
                     $scope.contact = false;
                     $scope.simulators = false;
-                    $scope.school = false;
                     $scope.userBlock = false;
                 }
             }, {
@@ -60,7 +57,6 @@ app.directive("headerBlock", function() {
                     $scope.video = false;
                     $scope.contact = true;
                     $scope.simulators = false;
-                    $scope.school = false;
                     $scope.userBlock = false;
                 }
             }, {
@@ -70,17 +66,6 @@ app.directive("headerBlock", function() {
                     $scope.video = false;
                     $scope.contact = false;
                     $scope.simulators = true;
-                    $scope.school = false;
-                    $scope.userBlock = false;
-                }
-            }, {
-                name: "Школа",
-                action: function() {
-                    $scope.home = false;
-                    $scope.video = false;
-                    $scope.contact = false;
-                    $scope.simulators = false;
-                    $scope.school = true;
                     $scope.userBlock = false;
                 }
             }];
@@ -90,7 +75,6 @@ app.directive("headerBlock", function() {
                 $scope.video = false;
                 $scope.contact = false;
                 $scope.simulators = false;
-                $scope.school = false;
                 $scope.userBlock = true;
             }
 
@@ -106,4 +90,13 @@ app.directive("bodyBlock", function() {
         templateUrl: "template/body.html",
         controller: function($scope, $http, ngDialog) {}
     }
-})
+});
+
+//Директива головної сторінки
+app.directive("mainBlock", function() {
+    return {
+        replace: true,
+        templateUrl: "template/mainPage.html",
+        controller: function($scope, $http, ngDialog) {}
+    }
+});
