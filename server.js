@@ -21,4 +21,12 @@ const connection = mysql.createConnection({
 
 
 app.get("*",function (req, res) {
-	res.sendFile(__dirname + "
+	res.sendFile(__dirname + "/public/index.html");
+});
+
+
+//Запус сервера
+app.listen(PORT, function (err){
+	if (err) throw err;
+	console.log("Server start on port 8000!");
+});
