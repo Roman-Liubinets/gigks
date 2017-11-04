@@ -93,7 +93,7 @@ body {
 }
 
 /*стилізація тіла сторінки*/
-
+/*Головна сторінка*/
 .main-container {
     width: 100%;
     background-color: white;
@@ -120,6 +120,7 @@ body {
 .main-page-text-block a {
     color: #6A6A6A;
 }
+/*Сторінка контактів*/
 
 /*Слайдер*/
 
