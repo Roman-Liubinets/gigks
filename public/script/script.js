@@ -98,3 +98,12 @@ app.directive("headerBlock", function() {
         }
     }
 });
+
+//деректива тіла сайту
+app.directive("bodyBlock", function() {
+    return {
+        replace: true,
+        templateUrl: "template/body.html",
+        controller: function($scope, $http, ngDialog) {}
+    }
+})
