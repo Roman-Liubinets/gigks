@@ -3,10 +3,16 @@
         <nav class="menu-container">
             <div class="navigation">
                 <ul>
+                    <li>
+                        <span>ГІКС</span>
+                    </li>
                     <li ng-repeat="btn in menuNavBtn">
                         <a href="#" ng-click="btn.action()">{{btn.name}}</a>
                     </li>
                 </ul>
+            </div>
+            <div class="user-block">
+                <a class="login-block" href="#" ng-click="userEntrBlock()">Вхід</a>
             </div>
         </nav>
     </div>

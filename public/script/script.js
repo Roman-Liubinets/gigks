@@ -65,17 +65,18 @@ app.directive("headerBlock", function() {
                     $scope.school = true;
                     $scope.userBlock = false;
                 }
-            }, {
-                name: "Школа",
-                action: function() {
-                    $scope.home = false;
-                    $scope.video = false;
-                    $scope.contact = false;
-                    $scope.simulators = false;
-                    $scope.school = false;
-                    $scope.userBlock = true;
-                }
-            }]
+            }];
+
+            $scope.userEntrBlock = function() {
+                $scope.home = false;
+                $scope.video = false;
+                $scope.contact = false;
+                $scope.simulators = false;
+                $scope.school = false;
+                $scope.userBlock = true;
+            }
+
+
         }
     }
 });
