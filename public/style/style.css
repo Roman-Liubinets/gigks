@@ -117,8 +117,8 @@ body {
     font-weight: 700;
 }
 
-.main-page-text-block span {
-    font-weight: bold;
+.main-page-text-block a {
+    color: #6A6A6A;
 }
 
 /*Слайдер*/
