@@ -8,7 +8,12 @@ app.directive("headerBlock", function() {
         replace: true,
         templateUrl: "template/header.html",
         controller: function($scope, $http) {
-            
+            $scope.home =true;
+            $scope.video = false;
+            $scope.contact = false;
+            $scope.simulators = false;
+            $scope.school = false;
+            $scope.userBlock = false;
         }
     }
 });
