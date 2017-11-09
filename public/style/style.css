@@ -150,6 +150,26 @@ body {
     width: 337px;
 }
 
+/*сторінка тренажерів*/
+/*каталог*/
+
+.simulators-page {
+    margin: 70px;
+}
+
+
+.simulators-catalog-items {
+    width: 290px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.simulators-items-name a {
+    margin-left: 40%;
+}
+
+
+
 /*Слайдер*/
 
 #block-for-slider {

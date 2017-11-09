@@ -117,6 +117,15 @@ app.directive("contactBlock", function() {
     }
 });
 
+//Директива для сторінки тренажери
+app.directive("catalogBlock", function() {
+    return {
+        replace: true,
+        templateUrl: "template/simulatorsPage.html",
+        controller: function($scope, $http, ngDialog) {}
+    }
+});
+
 //Директива для слайдера
 app.directive("sliderBlock", function() {
     return {
