@@ -1,0 +1,43 @@
+<div ng-show="login">
+    <div ng-show="loginBlock">
+        <div class="login-page">
+            <h1>Вхід в особистий кабінет</h1>
+            <span>Введіть логін і пароль для входу в ваш кабінет користувача:</span>
+            <div class="login-password">
+                <label for="login">Логін</label>
+                <input type="text" name="login" id="login">
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password"></div>
+            <div class="remind-forget">
+                <input type="checkbox" id="remindMe">
+                <label for="remindMe">Запам'ятай мене</label>
+                <a href="#">Забув пароль</a>
+            </div>
+            <div>
+                <input type="button" value="Вхід">
+                <a href="#" ng-click="changeToRegister()">Зарегиструватися</a>
+            </div>
+        </div>
+    </div>
+    <div ng-show="registerBlock">
+        <div class="register-page">
+            <h1>Регистрація користувача</h1>
+            <div class="register-inputs">
+                <label for="loginReg">Логін</label>
+                <input type="text" name="loginReg" id="loginReg">
+                <label for="passwordReg">Пароль</label>
+                <input type="password" name="passwordReg" id="passwordReg">
+                <label for="emailReg">Ел.пошта</label>
+                <input type="text" name="emailReg" id="emailReg">
+                <label for="nameReg">Ім'я</label>
+                <input type="text" name="nameReg" id="nameReg">
+                <label for="surnameReg">Прізвище</label>
+                <input type="text" name="surnameReg" id="surnameReg">
+                <label for="dateReg">Дата народження</label>
+                <input type="text" name="dateReg" id="dateReg">
+                <input type="button" value="Зарегиструватися">
+            </div>
+        </div>
+    </div>
+
+</div>

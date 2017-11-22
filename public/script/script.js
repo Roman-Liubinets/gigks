@@ -30,7 +30,8 @@ app.directive("headerBlock", function() {
             $scope.video = false;
             $scope.contact = false;
             $scope.simulators = false;
-            $scope.userBlock = false;
+            $scope.details = false;
+            $scope.login = false;
 
             $scope.menuNavBtn = [{
                 name: "Головна",
@@ -39,7 +40,8 @@ app.directive("headerBlock", function() {
                     $scope.video = false;
                     $scope.contact = false;
                     $scope.simulators = false;
-                    $scope.userBlock = false;
+                    $scope.details = false;
+                    $scope.login = false;
                 }
             }, {
                 name: "Відео",
@@ -48,7 +50,8 @@ app.directive("headerBlock", function() {
                     $scope.video = true;
                     $scope.contact = false;
                     $scope.simulators = false;
-                    $scope.userBlock = false;
+                    $scope.details = false;
+                    $scope.login = false;
                 }
             }, {
                 name: "Контакти",
@@ -57,7 +60,8 @@ app.directive("headerBlock", function() {
                     $scope.video = false;
                     $scope.contact = true;
                     $scope.simulators = false;
-                    $scope.userBlock = false;
+                    $scope.details = false;
+                    $scope.login = false;
                 }
             }, {
                 name: "Тренажери",
@@ -66,7 +70,8 @@ app.directive("headerBlock", function() {
                     $scope.video = false;
                     $scope.contact = false;
                     $scope.simulators = true;
-                    $scope.userBlock = false;
+                    $scope.details = false;
+                    $scope.login = false;
                 }
             }];
 
@@ -75,7 +80,8 @@ app.directive("headerBlock", function() {
                 $scope.video = false;
                 $scope.contact = false;
                 $scope.simulators = false;
-                $scope.userBlock = true;
+                $scope.details = false;
+                $scope.login = true;
             }
 
 
@@ -117,15 +123,47 @@ app.directive("contactBlock", function() {
     }
 });
 
-//Директива для сторінки тренажери
+//Директива для сторінки тренажерів
 app.directive("catalogBlock", function() {
     return {
         replace: true,
         templateUrl: "template/simulatorsPage.html",
+        controller: function($scope, $http, ngDialog) {
+            $scope.showDetailsPage = function() {
+                $scope.home = false;
+                $scope.video = false;
+                $scope.contact = false;
+                $scope.simulators = false;
+                $scope.userBlock = false;
+                $scope.details = true;
+            }
+        }
+    }
+});
+//Директива для опису тренажерів
+app.directive("detailsBlock", function() {
+    return {
+        replace: true,
+        templateUrl: "template/detailPage.html",
         controller: function($scope, $http, ngDialog) {}
     }
 });
+//Директива логіну і регестрації
+app.directive("loginBlock", function () {
+    return {
+        replace: true,
+        templateUrl: "template/login.html",
+        controller: function ($scope, $http, ngDialog) {
+            $scope.loginBlock = true;
+            $scope.registerBlock = false;
 
+            $scope.changeToRegister = function () {
+                $scope.loginBlock = false;
+                $scope.registerBlock = true;
+            }
+        }
+    }
+});
 //Директива для слайдера
 app.directive("sliderBlock", function() {
     return {

@@ -118,7 +118,7 @@ body {
     display: block;
     margin-top: 150px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .main-page-text-block a {
@@ -162,10 +162,15 @@ body {
     margin: 70px;
 }
 
+.simulators-page h2 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding-top: 15px;
+}
+
 
 .simulators-catalog-items {
     width: 290px;
-    height: 400px;
+    min-height: 400px;
     border: 1px solid black;
     box-shadow: 0 5px 32px 2px rgba(0, 0, 0, .17);
     border-style: solid;
@@ -174,6 +179,8 @@ body {
 }
 
 .simulators-items-name {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 
@@ -184,14 +191,95 @@ body {
     font-size: 20px;
     text-decoration: none;
     color: black;
-
 }
 
 .simulators-items-name a:hover {
     color: blue;
 }
 
+.simulators-items-details {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    width: 70%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
 
+
+.simulators-items-details a {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding-left: 30%;
+}
+
+.simulators-items-details:hover {
+    background-color: #DAA520;
+    border: 2px solid #DAA520;
+}
+
+.simulators-items-details:hover a {
+    color: white;
+}
+
+.add-simulators {
+    margin-bottom: 15px;
+}
+
+.add-simulators input {
+    background-color: black;
+    border: 0px solid black;
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 7px;
+}
+
+.add-simulators input:hover {
+    background-color: #DAA520;
+}
+
+.change-delete-simulators {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.change-delete-simulators input {
+    background-color: black;
+    border: 0px solid black;
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 7px;
+    width: 100px;
+}
+
+.change-delete-simulators input:hover {
+    background-color: #DAA520;
+}
+
+/*сторінка деталів*/
+
+.details-page {
+    float: left;
+    padding: 40px 70px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.details-page img {
+    padding-left: 17.5%;
+}
+
+.details {
+    font-size: 17px;
+    font-weight: 700;
+}
 
 /*Слайдер*/
 
