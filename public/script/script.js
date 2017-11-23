@@ -154,8 +154,8 @@ app.directive("loginBlock", function () {
         replace: true,
         templateUrl: "template/login.html",
         controller: function ($scope, $http, ngDialog) {
-            $scope.loginBlock = true;
-            $scope.registerBlock = false;
+            $scope.loginBlock = false;
+            $scope.registerBlock = true;
 
             $scope.changeToRegister = function () {
                 $scope.loginBlock = false;
