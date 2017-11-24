@@ -1,6 +1,6 @@
 html, body {
     min-width: 1122px;
-    min-height: 550px;
+    min-height: 150px;
     margin: 0;
     padding: 0;
 }
@@ -101,6 +101,7 @@ body {
     width: 100%;
     background-color: white;
     min-height: 300px;
+    margin-bottom: 200px;
 }
 
 .main-page {
@@ -304,9 +305,22 @@ body {
     display: block;
     border: 2px solid black;
     margin-bottom: 12px;
-    width: 100%;
+    width: 420px;
     height: 30px;
     font-weight: 700;
+}
+
+.login-field {
+    background: url("../img/sprites.png") no-repeat;
+    background-position: 6px -898px;
+    padding-left: 30px;
+    font-weight: 700;
+}
+
+.password-field {
+    background: url("../img/sprites.png") no-repeat;
+    background-position: 6px -273px;
+    padding-left: 30px;
 }
 
 .remind-forget {
@@ -382,16 +396,59 @@ body {
 .register-inputs input {
     border: 2px solid black;
     margin-bottom: 12px;
-    width: 100%;
+    width: 435px;
     height: 30px;
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+button {
+    width: 100%;
+    margin-bottom: 17px;
+    background-color: black;
+    color: white;
+    border: 0px solid white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    height: 35px;
+    font-size: 15px;
     font-weight: 700;
 }
 
-.register-inputs-button input {
-    background-color: black;
+/*сторінка користувача*/
+.container-userspage {
+    float: left;
+    padding: 5px 30px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    width: 100%;
 }
 
+.users-navigation {
+    width: 90%;
+    float: left;
+}
 
+.users-navigation h3 {
+    float: left;
+}
+
+.users-navigation input {
+    float: right;
+}
+
+.users-page-photo {
+    float: left;
+    display: block;
+    width: 200px;
+}
+
+.users-page-photo input {
+    margin: 20px 50px;
+}
+
+.users-page-information {
+    float: left;
+    margin-left: 50px;
+}
 /*Слайдер*/
 
 #block-for-slider {
@@ -512,6 +569,7 @@ body {
     background-size: auto;
     font-family: 'PT Sans Narrow', sans-serif;
     color: white;
+    font-weight: 700;
 }
 
 .footer-contacts {

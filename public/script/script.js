@@ -155,12 +155,23 @@ app.directive("loginBlock", function () {
         templateUrl: "template/login.html",
         controller: function ($scope, $http, ngDialog) {
             $scope.loginBlock = false;
-            $scope.registerBlock = true;
+            $scope.registerBlock = false;
+            $scope.usersPageBlock = true
 
             $scope.changeToRegister = function () {
                 $scope.loginBlock = false;
                 $scope.registerBlock = true;
             }
+        }
+    }
+});
+
+//Директива профіля користувача
+app.directive("userBlock", function () {
+    return {
+        replace: true,
+        templateUrl: "template/usersPage.html",
+        controller: function ($scope, $http, ngDialog) {
         }
     }
 });

@@ -16,8 +16,29 @@ const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'thuesday13'
+    database: 'giks'
 });
+
+//Створення таблиці юзерів
+let usersDb = function () {
+    connection.query('' +
+        'CREATE TABLE IF NOT EXISTS users (' +
+        'id int(11) NOT NULL AUTO_INCREMENT,' +
+        'login varchar(50) NOT NULL, ' +
+        'password varchar(50) NOT NULL,' +
+        'email varchar(50) NOT NULL,' +
+        'name varchar(50), ' +
+        'sname varchar(50),' +
+        'bDay varchar(50),' +
+        'PRIMARY KEY(id),' +
+        'UNIQUE INDEX `login_UNIQUE` (`login` ASC))',
+        function (err) {
+            if (err) throw err;
+            console.log('CREATE TABLE IF NOT EXISTS users')
+        });
+};
+
+usersDb();
 
 app.get("*",function (req, res) {
 	res.sendFile(__dirname + "/public/index.html");
