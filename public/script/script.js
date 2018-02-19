@@ -1,6 +1,6 @@
 const app = angular.module('app', ['ngDialog']);
 
-// //Забираєм %2F та # з url сайту
+// Забираєм %2F та # з url сайту
 // app.config(['$locationProvider', function ($locationProvider) {
 //     $locationProvider.hashPrefix('');
 //     $locationProvider.html5Mode(true);
@@ -9,7 +9,7 @@ const app = angular.module('app', ['ngDialog']);
 // app.config(function ($routeProvider) {
 //     $routeProvider
 //         .when('/', {
-//             templateUrl: '/template/index.html'
+//             templateUrl: '/public/index.html'
 //         })
 //         .otherwise({
 //             redirectTo: '/'
