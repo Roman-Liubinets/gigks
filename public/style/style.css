@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     min-width: 1122px;
     min-height: 150px;
     margin: 0;
@@ -157,6 +158,7 @@ body {
 }
 
 /*сторінка тренажерів*/
+
 /*каталог*/
 
 .simulators-page {
@@ -283,6 +285,7 @@ body {
 }
 
 /*логін регестрація*/
+
 .login-page {
     font-family: 'PT Sans Narrow', sans-serif;
 }
@@ -344,7 +347,7 @@ body {
 
 .enter-register-block {
     float: left;
-    width: 100%; 
+    width: 100%;
     margin-top: 15px;
     margin-bottom: 25px;
 }
@@ -370,7 +373,7 @@ body {
 }
 
 .enter-register-block input:hover {
-    background-color: #DAA520; 
+    background-color: #DAA520;
 }
 
 .container-login {
@@ -381,6 +384,7 @@ body {
 }
 
 /*регестрація*/
+
 .register-page {
     font-family: 'PT Sans Narrow', sans-serif;
 }
@@ -415,6 +419,7 @@ button {
 }
 
 /*сторінка користувача*/
+
 .container-userspage {
     float: left;
     padding: 5px 30px;
@@ -431,24 +436,45 @@ button {
     float: left;
 }
 
-.users-navigation input {
-    float: right;
-}
-
 .users-page-photo {
     float: left;
     display: block;
     width: 200px;
 }
 
-.users-page-photo input {
-    margin: 20px 50px;
-}
-
 .users-page-information {
     float: left;
     margin-left: 50px;
 }
+
+.users-page-information p {
+    font-weight: bold;
+}
+
+.users-page-navigation {
+    float: right;
+    display: block;
+    margin: 20px 50px;
+}
+
+.users-page-navigation input {
+    display: block;
+}
+
+.users-page-navigation input:nth-child(1) {
+    
+}
+
+.users-page-navigation input:nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.users-page-navigation input:nth-child(3) {
+    margin-top: 100px;
+    float: right;
+}
+
 /*Слайдер*/
 
 #block-for-slider {
@@ -484,7 +510,8 @@ button {
     transition-timing-function: ease-in-out;
 }
 
-#slidewrapper ul, #slidewrapper li {
+#slidewrapper ul,
+#slidewrapper li {
     margin: 0;
     padding: 0;
 }
@@ -500,7 +527,8 @@ button {
     width: 100%;
 }
 
-#prev-btn, #next-btn {
+#prev-btn,
+#next-btn {
     /*position: absolute;*/
     display: inline-block;
     margin-top: 25px;
@@ -516,7 +544,8 @@ button {
     font-weight: 700;
 }
 
-#prev-btn:hover, #next-btn:hover {
+#prev-btn:hover,
+#next-btn:hover {
     cursor: pointer;
     background-color: darkorange;
 }
@@ -553,11 +582,13 @@ button {
     cursor: pointer;
 }
 
-#slidewrapper li:nth-child(3), #slidewrapper li:nth-child(4) {
+#slidewrapper li:nth-child(3),
+#slidewrapper li:nth-child(4) {
     display: none;
 }
 
 /*Футер*/
+
 .main-footer {
     height: 120px;
     padding-top: 20px;
@@ -590,9 +621,9 @@ button {
 }
 
 .social-btn {
-width: 41px;
-height: 41px;
-background: url("../img/favicon.ico") no-repeat;
+    width: 41px;
+    height: 41px;
+    background: url("../img/favicon.ico") no-repeat;
 }
 
 

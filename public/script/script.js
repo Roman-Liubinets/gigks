@@ -172,6 +172,16 @@ app.directive("userBlock", function () {
         replace: true,
         templateUrl: "template/usersPage.html",
         controller: function ($scope, $http, ngDialog) {
+            //Редагувати профіль користувача
+            $scope.cngUsersPage = function(fullName, login, mail, birth) {
+                ngDialog.open({
+                    template: '/template/cngUsersPage.html',
+                    scope: $scope,
+                    controller: function($scope) {
+                        
+                    }
+                });
+            }
         }
     }
 });
